@@ -51,7 +51,7 @@
     border: 1px solid #1578BE;
     width: 96px;
     height: 36px;
-    transition: background-color 0.3s ease; /* Transition effect */
+    transition: background-color 0.3s ease; 
 }
 
 .sign-up {
@@ -59,17 +59,17 @@
     color: #fff;
     width: 96px;
     height: 36px;
-    transition: background-color 0.3s ease; /* Transition effect */
+    transition: background-color 0.3s ease;
 }
 
-/* Hover effect */
+
 .sign-in:hover,
 .sign-up:hover {
     background-color:#1578BE;
     color: #fff;
 }
 
-/* Active effect */
+
 .sign-in:active,
 .sign-up:active {
     background-color:#1578BE;

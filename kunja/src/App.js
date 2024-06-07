@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Navbar from './components/navbar/Navbar'
-import Registration from './Authentication/Registration'
+import Registration from './Authentication/registration/Registration'
 import PreView from './Authentication/preview/PreView'
 import About from './components/about/About'
 import Events from './components/events/Events'

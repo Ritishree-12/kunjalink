@@ -10,7 +10,7 @@
 }
 
 .left-side {
-  background-image: url('../../public/assets/images/Vector.png');
+  background-image: url('../../../public/assets/images/Vector.png');
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
@@ -21,7 +21,7 @@
 }
 
 .right-side {
-  background-image: url('../../public/assets/images/bg.png');
+  background-image: url('../../../public/assets/images/bg.png');
   background-repeat: no-repeat;
   background-size: 100%;
   /* margin-left: 100px; */
@@ -132,9 +132,30 @@
   margin-top: 5px;
 }
 
+.divider {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #348AC6, #EA770F);
+  margin-top: 0px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.preview {
+  width: 80%;
+  height: 2px;
+  background: #ddd;
+  margin: 0 auto;
+  /* Centering the preview */
+  border-radius: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
 .next-btn {
   background-color: #fff;
-  color:#1578BE;
+  color: #1578BE;
   border: 2px solid #1578BE;
   padding: 10px 30px;
   cursor: pointer;

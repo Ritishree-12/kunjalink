@@ -62,8 +62,11 @@ const Registration = () => {
               />
               Register as an Individual
             </label>
+           
           </div>
+         
         </div>
+         <div className="divider"></div>
         <div className="content">
           <div className="form-container">
             <form onSubmit={handleSubmit}>
