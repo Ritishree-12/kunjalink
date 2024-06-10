@@ -25,7 +25,7 @@
 
 .details-container {
   position: relative;
-  z-index: 1; /* Ensure the content is above the background image */
+  z-index: 1;
 }
 
 .left-side::before {
@@ -37,7 +37,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the image */
+  transform: translate(-50%, -50%); 
   opacity: 0.5;
   z-index: 0;
 }

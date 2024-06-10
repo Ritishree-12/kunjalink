@@ -3,8 +3,8 @@
     width: 100%;
     height: 100vh;
     background: 
-      url('../../../public/assets/images/vector1.png') center 6% / 20% no-repeat, /* Smaller Vector image positioned 10% from top */
-      url('../../../public/assets/images/bg.png') center center / 60% no-repeat; /* Large background image */
+      url('../../../public/assets/images/vector1.png') center 6% / 20% no-repeat,
+      url('../../../public/assets/images/bg.png') center center / 60% no-repeat; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,6 +106,6 @@
   font-size: 24px;
   margin-bottom: 10px;
   align-self: flex-start;
-  padding-left: 10px; /* Adjust the padding as needed */
+  padding-left: 10px;
   }
   
