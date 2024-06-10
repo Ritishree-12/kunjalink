@@ -13,8 +13,9 @@ const Skills = () => {
   return (
     <div className="skills-container">
       <button className="back-button">BACK</button>
-      {/* <h1 className="skills-title">Skills</h1> */}
       <div className="skills-box">
+        <div className="skills-header">Your Skills</div>
+        <div className="hr"></div>
         <div className="skills-list">
           {skills.map((skill, index) => (
             <div key={index} className="skill">
@@ -22,6 +23,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
+        <div className="hr"></div>
         <button className="add-skills-button">Add Skills</button>
       </div>
     </div>
