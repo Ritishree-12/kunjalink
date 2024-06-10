@@ -1,3 +1,4 @@
+// PreView.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './preview.css';
@@ -16,7 +17,7 @@ const PreView = () => {
   const handleSubmit = () => {
     console.log('Submit button clicked');
     navigate('/add-skill');
-  }
+  };
 
   return (
     <div className="registration-screen">
@@ -37,44 +38,44 @@ const PreView = () => {
           </div>
         </div>
         <div className="divider"></div>
-        <h3 style={{ color: 'black', display: 'flex', justifyContent: 'center', fontFamily: "Roboto", fontSize: '24px', }}>Preview</h3>
-        <div className="strength"></div>
-        <div className='preview-container'>
-          <div className='form-group1'>
-            <div className="box">
-              Organization Name: {organizationName}
-            </div>
-          </div>
-          <div className='form-group1'>
-            <div className="box">
-              Primary country of registration: {primaryCountry}
-            </div>
-          </div>
-          <div className='form-group1'>
-            <div className="box">
-              Organization Email Id: {organizationEmail}
-            </div>
-          </div>
-          <h3 style={{ color: 'black', display: 'flex', justifyContent: 'center', fontFamily: "Roboto", fontSize: '24px' }}>Contact Person for Registration</h3>
-          <div className="strength" style={{marginBottom:'10px'}}></div>
+        <h3 className="preview-title">Preview</h3>
+        <div className="strength-hr"></div>
+        <div className="preview-container">
           <div className="form-group1">
-            <div className="form-row2">
-              <div className="box1">
-                First Name: {firstName}
+            <div className="box">
+              Organization Name: <span className='spanStyle'>{organizationName}</span> 
+            </div>
+          </div>
+          <div className="form-group1">
+            <div className="form-group1 box">
+              Primary country of registration: <span className='spanStyle'>{primaryCountry}</span> 
+            </div>
+          </div>
+          <div className="form-group1">
+            <div className="box">
+              Organization Email Id: <span className='spanStyle'>{organizationEmail}</span> 
+            </div>
+          </div>
+          <div className="strength-hr"></div>
+          <h3 className="contact-person">Contact Person for Registration</h3>
+          <div style={{margin:'10px auto',marginLeft:'20%'}}>
+            <div style={{ display: 'flex', flexDirection: 'row', marginBottom: '20px', width: '80%' }}>
+              <div className="box" style={{ marginRight: '50px' }}>
+                First Name: <span className='spanStyle'>{firstName}</span>
               </div>
-              <div className="box1">
-                Last Name: {lastName}
+              <div className="box">
+                Last Name: <span className='spanStyle'>{lastName}</span>
               </div>
             </div>
           </div>
-          <div className='form-group1'>
+          <div className="form-group1">
             <div className="box">
-              Email Id: {contactEmail}
+              Email Id: <span className='spanStyle'>{contactEmail}</span>
             </div>
           </div>
-          <div className='form-group1'>
+          <div className="form-group1">
             <div className="box">
-              Password: {password}
+              Password: <span className='spanStyle'>{password}</span> 
             </div>
           </div>
         </div>
@@ -84,7 +85,7 @@ const PreView = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default PreView;

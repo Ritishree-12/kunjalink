@@ -35,11 +35,13 @@ const Registration = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    navigate({
-      pathname: '/preview',
-      state: { formData }
-    });
+    if (formData.organizationType === 'type1') {
+      navigate('/preview');
+    } else {
+      navigate('/preview1', { state: { formData } });
+    }
   };
+
 
   return (
     <div className="registration-screen">
@@ -196,7 +198,7 @@ const Registration = () => {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label>Country/Location <span className="required">(Required)</span></label>
+                    <label>Email <span className="required">(Required)</span></label>
                     <input
                       type="email"
                       name="contactEmail"

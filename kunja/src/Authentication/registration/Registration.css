@@ -1,15 +1,17 @@
 .registration-screen {
   display: flex;
   background-image: url('../../../public/assets/images/Vector.png'), url('../../../public/assets/images/bg.png');
-  background-position: left center, bottom right; 
+  background-position: left center, top right;
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, 60%;
+  background-size: 40%, 60%;
+  position: relative;
+  z-index: 1;
 }
 
 .left-side,
 .right-side {
   flex: 1;
-  padding: 20px;
+  padding: 50px;
   color: #fff;
 }
 
@@ -26,18 +28,7 @@
   z-index: 1; 
 }
 
-.left-side::before {
-  content: "";
-  background-image: url('../../../public/assets/images/Vector.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0.5;
-  z-index: 0; 
-}
+/*  */
 
 .left-side h2,
 .right-side h2 {
@@ -48,7 +39,7 @@
 
 .header-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 20px;
 }
 
@@ -79,7 +70,7 @@
 .form-container {
   border-radius: 10px;
   max-width: 600px;
-  width: 100%;
+  width: 80%;
   margin: auto;
 }
 
@@ -117,12 +108,13 @@
 
 .form-group input,
 .form-group select {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #EA770F;
   border-radius: 16px;
   background-color: transparent; 
+  margin: 0 auto;
 }
 
 .form-row {
@@ -136,7 +128,7 @@
 }
 
 .strength-indicator {
-  width: 100%;
+  width: 40%;
   height: 5px;
   background-color: #ddd;
   margin-top: 10px;
